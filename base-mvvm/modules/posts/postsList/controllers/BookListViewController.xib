@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookListViewController" customModule="base_mvvm" customModuleProvider="target">
             <connections>
-                <outlet property="bookListTableVIew" destination="I02-1S-qGh" id="Faq-Ny-V6U"/>
+                <outlet property="bookListTableView" destination="I02-1S-qGh" id="Faq-Ny-V6U"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,9 +20,9 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I02-1S-qGh">
-                    <rect key="frame" x="10" y="44" width="394" height="818"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="I02-1S-qGh">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" red="0.70980392160000005" green="0.63921568630000003" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="backGroundHexColor" value="#F8F9DE"/>
                     </userDefinedRuntimeAttributes>
@@ -35,9 +35,9 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="I02-1S-qGh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="9GQ-Qs-SeH"/>
+                <constraint firstItem="I02-1S-qGh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9GQ-Qs-SeH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="I02-1S-qGh" secondAttribute="bottom" id="Ktl-fk-F1l"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I02-1S-qGh" secondAttribute="trailing" constant="10" id="PeY-qw-DnY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I02-1S-qGh" secondAttribute="trailing" id="PeY-qw-DnY"/>
                 <constraint firstItem="I02-1S-qGh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lpa-ts-2Xa"/>
             </constraints>
             <point key="canvasLocation" x="132" y="76"/>

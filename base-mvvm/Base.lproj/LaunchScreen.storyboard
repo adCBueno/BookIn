@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,9 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BookIn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kl-Ui-ClK">
-                                <rect key="frame" x="110.5" y="408.5" width="193" height="79"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="66"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BookIn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zRt-rI-dKT">
+                                <rect key="frame" x="103.5" y="409" width="207" height="78"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="65"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -26,8 +25,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.70980392156862748" green="0.63921568627450975" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="3Kl-Ui-ClK" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="LNF-X8-Zt7"/>
-                            <constraint firstItem="3Kl-Ui-ClK" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LgB-Dy-Zed"/>
+                            <constraint firstItem="zRt-rI-dKT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Yrm-Cf-g02"/>
+                            <constraint firstItem="zRt-rI-dKT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="x1H-40-bsK"/>
                         </constraints>
                     </view>
                 </viewController>

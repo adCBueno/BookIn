@@ -1,5 +1,4 @@
 //
-
 import Foundation
 import FirebaseFirestore
 
@@ -43,7 +42,8 @@ class FirebaseManager {
         db.collection(collection.rawValue).addSnapshotListener { querySnapshot, error in
             guard error == nil else { return completion(.failure(error!)) }
             guard let documents = querySnapshot?.documents else { return completion(.success([])) }
-                        
+            
+            
             var items = [T]()
             let json = JSONDecoder()
             for document in documents {

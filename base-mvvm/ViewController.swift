@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     
     @IBAction func addUser(_ sender: Any) {
         
-        let user = User(id: userID, name: "UserOne", age: 21, email: "tes@test.com", password: "pass")
+        let user = User(id: userID, name: "UserOne", email: "tes@test.com", password: "pass")
         
         firebaseManager.addDocument(document: user, collection: .users) { result in
             switch result {
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func editUser(_ sender: Any) {
-        let user = User(id: userID, name: "UserOneEdited", age: 28, email: "tes@test.com", password: "pass")
+        let user = User(id: userID, name: "UserOneEdited", email: "tes@test.com", password: "pass")
 
         firebaseManager.updateDocument(document: user, collection: .users) { result in
             switch result {
@@ -76,7 +76,7 @@ class ViewController: UIViewController {
     func printUsers() {
         var str = ""
         for user in users {
-            str += "\(user.id), \(user.name), \(user.age)\n"
+            str += "\(user.id), \(user.name)\n"
         }
         dataLabel.text = str
     }

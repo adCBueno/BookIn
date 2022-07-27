@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>559815420931-4vimjqvgkh17asfqim0cuf3rf2jnk5pq.apps.googleusercontent.com</string>
+	<string>1031887726139-sl60b8q1k8h8r16ecfu16u63l316sv3i.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.559815420931-4vimjqvgkh17asfqim0cuf3rf2jnk5pq</string>
+	<string>com.googleusercontent.apps.1031887726139-sl60b8q1k8h8r16ecfu16u63l316sv3i</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAQjbkXwDz_8G5VbmofjpA9q5fyznhsgDo</string>
+	<string>AIzaSyC1L4cwrX7OcJMTjzF9AADGW-0SOf-woNM</string>
 	<key>GCM_SENDER_ID</key>
-	<string>559815420931</string>
+	<string>1031887726139</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.davidgj.testsui123</string>
+	<string>com.adri.tests.secondui.BookInAdvanced</string>
 	<key>PROJECT_ID</key>
-	<string>social-network-584a1</string>
+	<string>bookin-12947</string>
 	<key>STORAGE_BUCKET</key>
-	<string>social-network-584a1.appspot.com</string>
+	<string>bookin-12947.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:559815420931:ios:b1a61327fb69283bdbb236</string>
+	<string>1:1031887726139:ios:e1fc3e589c72f6c6eade1e</string>
 </dict>
 </plist>

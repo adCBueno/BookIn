@@ -1,3 +1,4 @@
+//
 import UIKit
 
 class SignupViewController: UIViewController {
@@ -17,11 +18,11 @@ class SignupViewController: UIViewController {
     
     @IBAction func addUser(_ sender: Any) {
         let name = nameTextField.text ?? ""
-        let age = Int(ageTextField.text ?? "18") ?? 18
+        
         let email = emailTextField.text ?? "test@user.com"
         let pass = passwordTextField.text ?? "pass"
         
-        SignUpViewModel.shared.addUser(name: name, age: age, email: email, password: pass) { result in
+        SignUpViewModel.shared.addUser(name: name, email: email, password: pass) { result in
             switch result {
             case .success(let user):
                 print("Success", user)
