@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchBooksViewController" customModule="base_mvvm" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="MIC-Bu-TXw" id="hc8-UY-GHK"/>
+                <outlet property="searchBookCollectionView" destination="tj5-ov-G0G" id="n8q-6w-yxg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iPL-b4-eXs">
+                    <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                    <subviews>
+                        <searchBar contentMode="redraw" text="" placeholder="Search.." translatesAutoresizingMaskIntoConstraints="NO" id="MIC-Bu-TXw">
+                            <rect key="frame" x="0.0" y="10" width="414" height="40"/>
+                            <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="qzR-nQ-ROm"/>
+                            </connections>
+                        </searchBar>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray4Color"/>
+                    <constraints>
+                        <constraint firstItem="MIC-Bu-TXw" firstAttribute="top" secondItem="iPL-b4-eXs" secondAttribute="top" constant="10" id="CZz-ju-KAB"/>
+                        <constraint firstAttribute="height" constant="60" id="LZL-1p-csE"/>
+                        <constraint firstAttribute="bottom" secondItem="MIC-Bu-TXw" secondAttribute="bottom" constant="10" id="Lg5-Z7-gBs"/>
+                        <constraint firstItem="MIC-Bu-TXw" firstAttribute="leading" secondItem="iPL-b4-eXs" secondAttribute="leading" id="aZG-0y-EP2"/>
+                        <constraint firstAttribute="trailing" secondItem="MIC-Bu-TXw" secondAttribute="trailing" id="gAo-xU-cb2"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="tj5-ov-G0G">
+                    <rect key="frame" x="20" y="112" width="374" height="730"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="p3I-O3-KMM">
+                        <size key="itemSize" width="90" height="130"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.35686274509999999" green="0.25882352939999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pt0-uG-gv5"/>
+                        <outlet property="delegate" destination="-1" id="HZK-Ky-tfY"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iPL-b4-eXs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4ef-wh-PVn"/>
+                <constraint firstItem="tj5-ov-G0G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="FuJ-6b-z7L"/>
+                <constraint firstAttribute="trailing" secondItem="iPL-b4-eXs" secondAttribute="trailing" id="QOE-n9-JIO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tj5-ov-G0G" secondAttribute="trailing" constant="20" id="X0u-1V-0tF"/>
+                <constraint firstItem="iPL-b4-eXs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="aa8-CP-aBS"/>
+                <constraint firstItem="tj5-ov-G0G" firstAttribute="top" secondItem="iPL-b4-eXs" secondAttribute="bottom" constant="8" id="s6R-3X-s9r"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="tj5-ov-G0G" secondAttribute="bottom" constant="20" id="yGQ-09-Gmq"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="78.348214285714278"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
